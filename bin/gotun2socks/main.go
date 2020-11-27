@@ -8,11 +8,12 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/yinghuocho/gotun2socks"
-	"github.com/yinghuocho/gotun2socks/tun"
+	"github.com/memo-off/gotun2socks"
+	"github.com/memo-off/gotun2socks/tun"
 )
 
 func main() {
+	log.SetFlags(log.LstdFlags | log.Llongfile)
 	var tunDevice string
 	var tunAddr string
 	var tunMask string
